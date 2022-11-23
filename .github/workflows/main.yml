@@ -3,7 +3,8 @@ name: YC GitHub Actions Demo - serverless container deployment
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
-  yc:
+  my_yc_job:
+    runs-on: ubuntu-latest
     steps:
       - name: Login to Yandex Cloud Container Registry
         id: login-cr
